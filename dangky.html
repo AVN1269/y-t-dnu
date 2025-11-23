@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Phòng khám y tế DNU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header">
+    <img src="assets/img/kehp9g6ahxkzyahan5zn20241212144730_thump.jpg" alt="Đại học Đại Nam - Học để thay đổi" class="logo">
+    <div class="header-text">
+      <h1>Phòng khám y tế DNU</h1>
+      <p>Khoa Y – Đại học Đại Nam</p>
+    </div>
+  </header>
+
+  <!-- Menu -->
+<nav class="nav">
+  <a href="index.html">Giới thiệu</a>
+  <a href="service.html">Dịch vụ</a>
+  <a href="dangky.html">Tư vấn và đăng ký lịch khám</a>
+  <a href="lienhe.html">Liên hệ</a>
+  <a href="login.html">Đăng nhập</a>
+</nav>
+
+<div class="banner">
+  <img src="assets/img/tải xuống.jpg" alt="Phòng khám Đa khoa DNU"> 
+  </div>
+</div>
+
+  <!-- Nội dung -->
+  <main>
+     <section class="dangky-wrapper">
+  <!-- Ảnh bên trái -->
+  <div class="dangky-image">
+    <img src="assets/img/ykha.jpg" alt="Hình ảnh tư vấn khám">
+  </div>
+
+  <!-- Form bên phải -->
+  <div class="form-dangky">
+    <h2>Đăng ký lịch khám</h2>
+    <form action="xong.html" class="dangky-form">
+      <label for="fullname">Họ và tên:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label>Giới tính:</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="Nam" required> Nam</label>
+        <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+        <label><input type="radio" name="gender" value="Khác"> Khác</label>
+      </div>
+
+      <label for="dob">Ngày tháng năm sinh:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="appointment-date">Ngày hẹn khám:</label>
+      <input type="date" id="appointment-date" name="appointment-date" required>
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required> 
+
+      <label for="service">Muốn khám gì:</label>
+      <select id="service" name="service" required>
+        <option value="">-- Chọn dịch vụ khám --</option>
+        <option value="kham-tong-quat">Khám tổng quát</option>
+        <option value="noi-khoa">Nội khoa</option>
+        <option value="nhi-khoa">Nhi khoa</option>
+        <option value="san-phu-khoa">Sản phụ khoa</option>
+        <option value="xet-nghiem">Xét nghiệm cơ bản</option>
+      </select>
+
+      <label for="time-slot">Khung giờ đến:</label>
+      <select id="time-slot" name="time-slot" required>
+        <option value="">-- Chọn khung giờ --</option>
+        <option value="7h-9h">7h00 – 9h00</option>
+        <option value="9h-11h">9h00 – 11h00</option>
+        <option value="13h-15h">13h00 – 15h00</option>
+        <option value="15h-17h">15h00 – 17h00</option>
+      </select>
+
+      <button type="submit">Gửi đơn đăng ký</button>
+    </form>
+  </div>
+</section>
+  </main>
+     <section id="lien-he" class="section contact">
+      <h1>Liên hệ</h1>
+      <p><strong>Địa chỉ:</strong> Tòa Giảng đường 1, Tầng 6, Đại học Đại Nam</p>
+      <p><strong>Hotline:</strong> 1900 1234</p>
+      <p><strong>Email:</strong> lienhe@dnu.edu.vn</p>
+    </section>
+  <footer class="site-footer">
+    <p>© 2025 Phòng khám y tế DNU – Not real Khoa Y, Đại học Đại Nam</p>
+  </footer>
+</body>
+</html>

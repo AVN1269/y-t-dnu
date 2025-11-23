@@ -1,0 +1,393 @@
+:root {
+  --brand: #F37021;  /* Cam Đại Nam */
+  --accent: #0B2C52;  /* Xanh navy */
+  --bg: #ffffff;
+  --text: #1f2d3d;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sections chung */
+.section {
+  padding: 20px 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+ margin-bottom: 15px;
+  color: #0072ce;
+  border-left: 5px solid #00a9e0;
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+/* Reset chung */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  background: var(--brand);
+  color: #fff;
+  padding: 12px 16px;
+  gap: 16px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* menu css */
+.nav {
+  display: flex;
+  justify-content: flex-end;  
+  gap: 20px;
+  background: var(--accent);
+  padding: 10px 16px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+/* Giới thiệu */
+#gioi-thieu h1 {
+  border: 2px solid var(--brand);
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Liên hệ */
+.contact {
+  background: var(--accent);
+  color: #fff;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--brand);
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+}
+
+/* Phần Liên hệ */
+.contact {
+  background: var(--accent);
+  color: #fff;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--brand);
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+}
+#lien-he {
+  max-width: 100%;  
+  margin: 0;        
+  padding: 30px 16px;
+  width: 100vw;      
+}
+
+.bs {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.bs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.bs-the {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bs-the img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+/* Reset toàn bộ box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Khung form tổng thể */
+.contact-section {
+  padding: 40px 20px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gender-options {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 16px;
+  }
+
+  .form-grid input,
+  .form-grid select {
+    font-size: 15px;
+  }
+
+  .form-grid button {
+    font-size: 15px;
+  }
+}
+.gender-options {
+  display: flex;
+  gap: 20px;
+  padding: 5px 0;
+}
+
+.gender-options label {
+  font-weight: normal;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.service-box {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-box img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.service-content h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.service-content p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.service-content a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background-color: #007bff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.service-content a:hover {
+  background-color: #0056b3;
+}
+.btn-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-dangky {
+  display: inline-block;
+  background-color: var(--brand); /* màu cam Đại Nam */
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dangky:hover {
+  background-color: #d95f1a;
+}
+/*khám bệnh*/
+.dangky-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.dangky-image {
+  flex: 1 1 300px;
+  max-width: 900px;
+}
+.dangky-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.form-dangky {
+  flex: 1 1 400px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-dangky h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.dangky-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dangky-form input,
+.dangky-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 20px;
+}
+
+.dangky-form button {
+  padding: 12px;
+  background-color: var(--brand);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dangky-form button:hover {
+  background-color: #d95f1a;
+}
