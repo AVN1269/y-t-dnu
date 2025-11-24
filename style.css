@@ -4,7 +4,6 @@
   --bg: #ffffff;
   --text: #1f2d3d;
 }
-
 .banner img {
   width: 100%;
   height: auto;
@@ -390,4 +389,5 @@ body {
 
 .dangky-form button:hover {
   background-color: #d95f1a;
+
 }
